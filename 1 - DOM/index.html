@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Compteur</h1>
+    <button id="btn">
+        Cliquez moi
+    </button>
+    <button id="reset" style="background-color: red;">
+        Réinitialiser
+    </button>
+    <p id="counter">Compteur : 0</p>
+    
+    
+    <script>
+        let compteur = 0;
+        const btn = document.querySelector('#btn');
+        const p = document.querySelector('#counter');
+        const reset = document.querySelector('#reset');
+        
+        reset.addEventListener('click', function() {
+            compteur = 0;
+            p.textContent = 'Compteur : ' + compteur;
+        });
+        
+        btn.addEventListener('click', function() {
+            compteur++;
+            p.textContent = 'Compteur : ' + compteur;
+        });
+        
+    </script>
+</body>
+</html>
