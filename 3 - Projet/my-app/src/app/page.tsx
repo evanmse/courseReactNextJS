@@ -15,7 +15,7 @@ export default function Home() {
 
       <h1>Bienvenue dans mon application</h1>
       
-      <Link href="/contact" className="btn-link"> Visiter mon application</Link>
+      <Link href="/contacts" className="btn-link"> Visiter mon application</Link>
     </div>
   );
 }
